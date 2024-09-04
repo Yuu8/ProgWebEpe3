@@ -4,9 +4,17 @@
         <servlet-name>SvLogin</servlet-name>
         <servlet-class>Servlets.SvLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvLogout</servlet-name>
+        <servlet-class>Servlets.SvLogout</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvLogin</servlet-name>
         <url-pattern>/SvLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvLogout</servlet-name>
+        <url-pattern>/SvLogout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

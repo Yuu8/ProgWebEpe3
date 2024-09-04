@@ -6,6 +6,9 @@
         <title>Estudiantes</title>
     </head>
     <body>
+        <%@include file="../Template/ValidarLogin.jsp" %>
+        <%@include file="../Template/BarraNav.jsp" %>
+        
         <h1>Estudiantes</h1>
     </body>
 </html>

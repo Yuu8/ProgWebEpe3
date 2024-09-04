@@ -2,6 +2,7 @@ Modelo\Controlador.class
 Persistencia\exceptions\IllegalOrphanException.class
 Persistencia\exceptions\NonexistentEntityException.class
 Persistencia\UsuariosJpaController.class
+Servlets\SvLogout.class
 Modelo\Usuarios_.class
 Modelo\Usuarios.class
 Persistencia\PersistenciaController.class
