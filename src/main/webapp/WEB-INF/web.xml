@@ -16,6 +16,14 @@
         <servlet-name>SvCrearMateria</servlet-name>
         <servlet-class>Servlets.SvCrearMateria</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvEliminarEstudiante</servlet-name>
+        <servlet-class>Servlets.SvEliminarEstudiante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvEliminarMateria</servlet-name>
+        <servlet-class>Servlets.SvEliminarMateria</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvLogin</servlet-name>
         <url-pattern>/SvLogin</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>SvCrearMateria</servlet-name>
         <url-pattern>/SvCrearMateria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvEliminarEstudiante</servlet-name>
+        <url-pattern>/SvEliminarEstudiante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvEliminarMateria</servlet-name>
+        <url-pattern>/SvEliminarMateria</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -39,8 +39,8 @@
                                 <button type="submit" class="btn btn-warning">Editar</button>
                             </form>
                         </td>
-                        <td><form action="${pageContext.request.contextPath}/SvEliminarEstudiante" method="POST">
-                                <input name="inptEstudianteId" type="hidden" value="<%=cur.getCurso_id() %>">
+                        <td><form action="${pageContext.request.contextPath}/SvEliminarMateria" method="POST">
+                                <input name="inptMateriaId" type="hidden" value="<%=cur.getCurso_id() %>">
                                 <button type="submit" class="btn btn-danger">Eliminar</button>
                             </form>
                         </td>

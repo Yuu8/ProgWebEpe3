@@ -11,13 +11,21 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Gestión
+                        Gestión Estudiantes
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCrearEstud">Crear Estudiantes</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCrearMateria">Crear Materias</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/CrearMaterias.jsp">Asignar Estudiante-Curso</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/ListarEstudiantes.jsp">Ver Estudiantes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gestión Materias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCrearMateria">Crear Materias</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/CrearMaterias.jsp">Asignar Estudiante-Curso</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/ListarMaterias.jsp">Ver Materias</a></li>
                     </ul>
                 </li>

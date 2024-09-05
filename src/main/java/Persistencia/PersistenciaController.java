@@ -27,4 +27,20 @@ public class PersistenciaController {
     public List<Cursos> listaCursos(){
         return curJpa.findCursosEntities();
     }
+    
+    public void EliminaEstudiante(int idEstudiante){
+        try {
+            estJpa.destroy(idEstudiante);
+        } catch (Exception e) {
+            System.out.println("Error al eliminar estudiante: "+e.getMessage());
+        }
+    }
+    
+    public void EliminaMateria(int idMateria){
+        try {
+            curJpa.destroy(idMateria);
+        } catch (Exception e) {
+            System.out.println("Error al eliminar materia: "+e.getMessage());
+        }
+    }
 }

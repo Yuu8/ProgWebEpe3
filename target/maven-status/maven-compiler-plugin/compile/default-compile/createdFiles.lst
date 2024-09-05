@@ -1,7 +1,9 @@
 Persistencia\CursosJpaController.class
+Servlets\SvEliminarEstudiante.class
 Modelo\Controlador.class
 Persistencia\exceptions\IllegalOrphanException.class
 Servlets\SvCrearMateria.class
+Servlets\SvEliminarMateria.class
 Persistencia\EstudiantesJpaController.class
 Modelo\Estudiantes_.class
 Persistencia\exceptions\NonexistentEntityException.class

@@ -26,4 +26,12 @@ public class Controlador {
     public List<Cursos> listaCursos(){
         return PersisCtrl.listaCursos();
     }
+    
+    public void EliminarEstudiante(int idEstudiante){
+        PersisCtrl.EliminaEstudiante(idEstudiante);
+    }
+    
+    public void EliminarMateria(int idMateria){
+        PersisCtrl.EliminaMateria(idMateria);
+    }
 }
