@@ -14,8 +14,11 @@
                         Gestión
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/CrearTareas.jsp">Crear Estudiantes</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/CrearTareas.jsp">Crear Materias</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCrearEstud">Crear Estudiantes</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCrearMateria">Crear Materias</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/CrearMaterias.jsp">Asignar Estudiante-Curso</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/ListarEstudiantes.jsp">Ver Estudiantes</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Vistas/ListarMaterias.jsp">Ver Materias</a></li>
                     </ul>
                 </li>
             </ul>
@@ -36,3 +39,6 @@
         </div>
     </div>
 </nav>
+
+<%@include file="CrearEstudiantes.jsp" %>
+<%@include file="CrearMaterias.jsp" %>

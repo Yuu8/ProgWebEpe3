@@ -10,4 +10,12 @@ public class Controlador {
     public List<Usuarios> obtenerUsuarios(){
         return PersisCtrl.obtenerUsuarios();
     }
+    
+    public void CrearEstudiante(Estudiantes est){
+        PersisCtrl.CrearEstudiante(est);
+    }
+    
+    public void CrearMateria(Cursos cur){
+        PersisCtrl.CrearMateria(cur);
+    }
 }

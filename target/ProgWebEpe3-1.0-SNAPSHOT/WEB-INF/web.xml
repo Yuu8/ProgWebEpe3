@@ -8,6 +8,14 @@
         <servlet-name>SvLogout</servlet-name>
         <servlet-class>Servlets.SvLogout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvCrearEstudiante</servlet-name>
+        <servlet-class>Servlets.SvCrearEstudiante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvCrearMateria</servlet-name>
+        <servlet-class>Servlets.SvCrearMateria</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvLogin</servlet-name>
         <url-pattern>/SvLogin</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>SvLogout</servlet-name>
         <url-pattern>/SvLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvCrearEstudiante</servlet-name>
+        <url-pattern>/SvCrearEstudiante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvCrearMateria</servlet-name>
+        <url-pattern>/SvCrearMateria</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
