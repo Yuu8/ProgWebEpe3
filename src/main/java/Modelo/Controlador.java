@@ -18,4 +18,12 @@ public class Controlador {
     public void CrearMateria(Cursos cur){
         PersisCtrl.CrearMateria(cur);
     }
+    
+    public List<Estudiantes> listaEstudiantes(){
+        return PersisCtrl.listaEstudiantes();
+    }
+    
+    public List<Cursos> listaCursos(){
+        return PersisCtrl.listaCursos();
+    }
 }

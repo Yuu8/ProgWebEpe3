@@ -19,4 +19,12 @@ public class PersistenciaController {
     public void CrearMateria(Cursos curs){
         curJpa.create(curs);
     }
+    
+    public List<Estudiantes> listaEstudiantes(){
+        return estJpa.findEstudiantesEntities();
+    }
+    
+    public List<Cursos> listaCursos(){
+        return curJpa.findCursosEntities();
+    }
 }
