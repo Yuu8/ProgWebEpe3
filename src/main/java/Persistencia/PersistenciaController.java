@@ -28,6 +28,30 @@ public class PersistenciaController {
         return curJpa.findCursosEntities();
     }
     
+    public Estudiantes obtEstudiante(int idEstudiante){
+        return estJpa.findEstudiantes(idEstudiante);
+    }
+    
+    public Cursos obtCurso(int idCurso){
+        return curJpa.findCursos(idCurso);
+    }
+    
+    public void editarEstudiante(Estudiantes est){
+        try {
+            estJpa.edit(est);
+        } catch (Exception e) {
+            System.out.println("Error al editar estudiante: "+e.getMessage());
+        }
+    }
+    
+    public void editarMateria(Cursos curs){
+        try {
+            curJpa.edit(curs);
+        } catch (Exception e) {
+            System.out.println("Error al editar curso: "+e.getMessage());
+        }
+    }
+    
     public void EliminaEstudiante(int idEstudiante){
         try {
             estJpa.destroy(idEstudiante);

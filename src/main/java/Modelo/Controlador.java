@@ -27,6 +27,22 @@ public class Controlador {
         return PersisCtrl.listaCursos();
     }
     
+    public Estudiantes obtEstudiante(int idEstudiante){
+        return PersisCtrl.obtEstudiante(idEstudiante);
+    }
+    
+    public Cursos obtCurso(int idCurso){
+        return PersisCtrl.obtCurso(idCurso);
+    }
+    
+    public void editarEstudiante(Estudiantes est){
+        PersisCtrl.editarEstudiante(est);
+    }
+    
+    public void editarMateria(Cursos cur){
+        PersisCtrl.editarMateria(cur);
+    }
+    
     public void EliminarEstudiante(int idEstudiante){
         PersisCtrl.EliminaEstudiante(idEstudiante);
     }

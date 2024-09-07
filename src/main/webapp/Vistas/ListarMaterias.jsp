@@ -34,8 +34,8 @@
                         <td><%=cur.getCurso_id() %></td>
                         <td><%=cur.getCurso_nombre() %></td>
                         <td>
-                            <form action="${pageContext.request.contextPath}/SvEditarTarea" method="GET">
-                                <input name="inptTareaId" type="hidden" value="<%=cur.getCurso_id() %>">
+                            <form action="${pageContext.request.contextPath}/SvEditarMateria" method="GET">
+                                <input name="inptMateriaId" type="hidden" value="<%=cur.getCurso_id() %>">
                                 <button type="submit" class="btn btn-warning">Editar</button>
                             </form>
                         </td>

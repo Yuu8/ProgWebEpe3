@@ -9,10 +9,12 @@ Modelo\Estudiantes_.class
 Persistencia\exceptions\NonexistentEntityException.class
 Servlets\SvLogout.class
 Modelo\Usuarios_.class
+Servlets\SvEditarMateria.class
 Persistencia\exceptions\PreexistingEntityException.class
 Servlets\SvLogin.class
 Servlets\SvCrearEstudiante.class
 Modelo\Estudiantes.class
+Servlets\SvEditarEstudiante.class
 Modelo\Cursos.class
 Modelo\Cursos_.class
 Persistencia\UsuariosJpaController.class

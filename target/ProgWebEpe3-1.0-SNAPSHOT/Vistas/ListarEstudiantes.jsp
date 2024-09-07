@@ -34,8 +34,8 @@
                         <td><%=est.getEstudiante_id() %></td>
                         <td><%=est.getEstudiante_nombre() %></td>
                         <td>
-                            <form action="${pageContext.request.contextPath}/SvEditarTarea" method="GET">
-                                <input name="inptTareaId" type="hidden" value="<%=est.getEstudiante_id() %>">
+                            <form action="${pageContext.request.contextPath}/SvEditarEstudiante" method="GET">
+                                <input name="inptEstudianteId" type="hidden" value="<%=est.getEstudiante_id() %>">
                                 <button type="submit" class="btn btn-warning">Editar</button>
                             </form>
                         </td>
