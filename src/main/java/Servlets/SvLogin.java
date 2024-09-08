@@ -49,7 +49,6 @@ public class SvLogin extends HttpServlet {
                 out.println("alert('Usuario o clave errónea.-');");
                 out.println("location = 'index.jsp'");
                 out.println("</script>");
-                //response.sendRedirect("index.jsp");
             }
         }
     }

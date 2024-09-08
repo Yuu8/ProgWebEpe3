@@ -42,29 +42,39 @@ public class SvAsignarEstudiantexMateria extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        PrintWriter out = response.getWriter();
+        HttpSession session = request.getSession();
         
         //Obtiene la lista de idMaterias que estan dentro de un input
         String arrayId = request.getParameter("inptCursosIdArray");
         
-        //El string se transforma en una lista, y dentro del split se indica que estan separados por una coma los valores
-        List<String> idMaterias = new ArrayList<String>(Arrays.asList(arrayId.split(",")));
-        
-        //Se crea una lista de tipo Cursos
-        List<Cursos> idMateriasNew = new ArrayList<>();
-        
-        Estudiantes est = (Estudiantes)request.getSession().getAttribute("estAsignar");
-        
-        /* Se recorre la lista de tipo String, la cual por cada uno de sus valores se hará un Parseo a tipo Int.
-        Este valor de tipo Int, se ingresará dentro de un método para obtener un resultado de tipo Curso,
-        así esto se añadirá a la lista de tipo Curso. */
-        for (int i = 0; i < idMaterias.size(); i++) {
-            idMateriasNew.add(ctrl.obtCurso(Integer.valueOf(idMaterias.get(i))));
+        if(arrayId == null || arrayId.equals("")){
+            session.removeAttribute("estAsignar");
+            out.println("<script>");
+            out.println("alert('Debe seleccionar una materia a asignar.-');");
+            out.println("location = 'Vistas/ListarEstudiantes.jsp'");
+            out.println("</script>");
+        }else{
+            //El string se transforma en una lista, y dentro del split se indica que estan separados por una coma los valores
+            List<String> idMaterias = new ArrayList<String>(Arrays.asList(arrayId.split(",")));
+
+            //Se crea una lista de tipo Cursos
+            List<Cursos> idMateriasNew = new ArrayList<>();
+
+            Estudiantes est = (Estudiantes)request.getSession().getAttribute("estAsignar");
+
+            /* Se recorre la lista de tipo String, la cual por cada uno de sus valores se hará un Parseo a tipo Int.
+            Este valor de tipo Int, se ingresará dentro de un método para obtener un resultado de tipo Curso,
+            así esto se añadirá a la lista de tipo Curso. */
+            for (int i = 0; i < idMaterias.size(); i++) {
+                idMateriasNew.add(ctrl.obtCurso(Integer.valueOf(idMaterias.get(i))));
+            }
+            //La lista de tipo Curso, se ingresará en un Set al Estudiante
+            est.setCurso_asignado(idMateriasNew);
+
+            ctrl.editarEstudiante(est);
+            response.sendRedirect("Vistas/ListarEstudiantes.jsp");
         }
-        //La lista de tipo Curso, se ingresará en un Set al Estudiante
-        est.setCurso_asignado(idMateriasNew);
-        
-        ctrl.editarEstudiante(est);
-        response.sendRedirect("Vistas/ListarEstudiantes.jsp");
     }
 
     @Override
