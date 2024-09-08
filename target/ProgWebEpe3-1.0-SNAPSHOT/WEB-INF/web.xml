@@ -32,6 +32,10 @@
         <servlet-name>SvEditarEstudiante</servlet-name>
         <servlet-class>Servlets.SvEditarEstudiante</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SvAsignarEstudiantexMateria</servlet-name>
+        <servlet-class>Servlets.SvAsignarEstudiantexMateria</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SvLogin</servlet-name>
         <url-pattern>/SvLogin</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>SvEditarEstudiante</servlet-name>
         <url-pattern>/SvEditarEstudiante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvAsignarEstudiantexMateria</servlet-name>
+        <url-pattern>/SvAsignarEstudiantexMateria</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

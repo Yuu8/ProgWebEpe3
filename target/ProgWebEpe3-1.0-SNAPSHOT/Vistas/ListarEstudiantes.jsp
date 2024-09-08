@@ -21,7 +21,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nombre</th>
-                        <th scope="col" colspan="2">&nbsp;</th>
+                        <th scope="col" colspan="3">&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +33,12 @@
                     <tr>
                         <td><%=est.getEstudiante_id() %></td>
                         <td><%=est.getEstudiante_nombre() %></td>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/SvAsignarEstudiantexMateria" method="GET">
+                                <input name="inptEstudianteId" type="hidden" value="<%=est.getEstudiante_id() %>">
+                                <button type="submit" class="btn btn-info">Asignar materia</button>
+                            </form>
+                        </td>
                         <td>
                             <form action="${pageContext.request.contextPath}/SvEditarEstudiante" method="GET">
                                 <input name="inptEstudianteId" type="hidden" value="<%=est.getEstudiante_id() %>">

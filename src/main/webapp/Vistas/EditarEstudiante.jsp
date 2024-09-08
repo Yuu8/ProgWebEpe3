@@ -4,7 +4,7 @@
 <html>
     <head>
         <%@include file="../Template/Scripts.jsp" %>
-        <title>JSP Page</title>
+        <title>Editar Estudiante</title>
     </head>
     <body>
         <%@include file="../Template/ValidarLogin.jsp" %>

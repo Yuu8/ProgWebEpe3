@@ -10,8 +10,10 @@ C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Persist
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvEliminarEstudiante.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvEditarMateria.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Persistencia\exceptions\IllegalOrphanException.java
+C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvEditarEstudiante.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvCrearEstudiante.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvCrearMateria.java
+C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvAsignarEstudiantexMateria.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Modelo\Estudiantes.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Persistencia\EstudiantesJpaController.java
 C:\Users\PC-ESTUDIO\Documents\NetBeansProjects\ProgWebEpe3\src\main\java\Servlets\SvEliminarMateria.java

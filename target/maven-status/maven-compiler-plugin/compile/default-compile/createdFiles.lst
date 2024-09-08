@@ -10,6 +10,7 @@ Persistencia\exceptions\NonexistentEntityException.class
 Servlets\SvLogout.class
 Modelo\Usuarios_.class
 Servlets\SvEditarMateria.class
+Servlets\SvAsignarEstudiantexMateria.class
 Persistencia\exceptions\PreexistingEntityException.class
 Servlets\SvLogin.class
 Servlets\SvCrearEstudiante.class
