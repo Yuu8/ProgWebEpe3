@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/Vistas/AsignarEstudiantexMateria.jsp">Asignar Estudiante-Curso</a>
+                    <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/Vistas/VerEstudiantesxCurso.jsp">Ver Estudiante-Curso</a>
                 </li>
             </ul>
             <div class="d-flex">
